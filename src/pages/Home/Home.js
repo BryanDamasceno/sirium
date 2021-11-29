@@ -1,5 +1,5 @@
-import React from "react";
-
+/*eslint-disable*/
+import React, { useState } from "react";
 import "../../global.css";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import "./Home.css";
@@ -8,13 +8,35 @@ import { FaCheckSquare } from "react-icons/fa";
 import { GoMarkGithub } from "react-icons/go";
 import CardReserva from "../../components/Grid/Grid";
 import CardInternet from "../../components/Card/Card";
+import Lottie from "react-lottie";
+import animationData from "../../animations/devAnimation.json";
 
 function Home() {
+  const [animationState, setAnimationState] = useState({
+    isStopped: false,
+    isPaused: false,
+  });
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className="container">
       <div>
         <Carrossel />
-
+        <div className="animation">
+          <Lottie
+            options={defaultOptions}
+            height={760}
+            width={760}
+            isStopped={animationState.isStopped}
+            isPaused={animationState.isPaused}
+          />
+        </div>
         <div className="Case">
           <div className="Box">
             <h2 className="title2">Modernize seu negócio</h2>
