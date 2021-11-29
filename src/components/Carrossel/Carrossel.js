@@ -39,29 +39,33 @@ function Carrossel() {
         <img
           className="capa-imagem"
           alt="imagem"
-          src="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/team.png?alt=media&token=2ca78939-357d-4f2c-81e7-fba48736ef91"
+          src="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/pexels-roberto-nickson-3082341.jpg?alt=media&token=5778ed8c-ae28-4232-81d6-ed6f3be37a42"
         />
 
-        <h1 className="texto globalTitle">Sempre perto de você.</h1>
+        <h1 className="texto globalTitle">MODERNIZE SEU NEGÓCIO.</h1>
       </div>
 
       <div className="content">
         <img
           alt="imagem"
           className="capa-imagem"
-          src="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/server.png?alt=media&token=9a655e9f-36a5-4544-a908-8786b4d5ba2f"
+          src="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/pexels-fauxels-3184338.jpg?alt=media&token=8a419771-da91-4c34-9b35-7e3405241464"
         />
-        <h1 className="texto globalTitle">Link dedicado e redundância.</h1>
+        <h1 className="texto globalTitle">
+          MARQUE SUA PRESENÇA NO MERCADO DIGITAL.
+        </h1>
       </div>
 
       <div className="content">
         <img
           alt="imagem"
           className="capa-imagem"
-          src="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/kid.png?alt=media&token=e6a3e8a3-cb21-45b4-a561-4013194ea20e"
+          src="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/pexels-andrew-neel-2312369.jpg?alt=media&token=df4e2be2-ecf4-4438-a43d-d1fd2df3c93c"
         />
         <div className="terceiro">
-          <h1 className="texto globalTitle">Preço Acessível.</h1>
+          <h1 className="texto globalTitle">
+            APROVEITE O MELHOR DA TECNOLOGIA.
+          </h1>
         </div>
       </div>
     </Carousel>

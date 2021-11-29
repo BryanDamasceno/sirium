@@ -68,9 +68,9 @@
   font-size: 5.5vw;
   color: rgba(255, 255, 255, 0.986);
   font-weight: 500;
-  font-family: "Comfortaa";
+  font-family: "Unica One", cursive;
   padding-top: -15vh;
-  text-shadow: rgb(67, 60, 60) 7px 7px 7px;
+  text-shadow: rgb(15, 13, 13) 9px 9px 9px;
   justify-content: center;
   align-items: unset;
 }
@@ -204,7 +204,7 @@
   .texto {
     font-size: 9vw;
     font-weight: 400;
-    font-family: "Comfortaa";
+    font-family: "Unica One", cursive;
     padding-bottom: 0;
     text-shadow: rgba(0, 0, 0, 0.993) 4px 4px 4px;
     justify-content: center;
