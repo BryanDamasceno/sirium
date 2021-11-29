@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+.capa-imagem {
+  width: 500vw;
+  height: 91vh;
+  background-position: center;
+  background-size: cover;
+  max-width: 100%;
+}
+
+.fundo-imagem {
+  width: 500vw;
+  height: 88vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+
+.carousel {
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  display: flex;
+}
+
+.texto-principal {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 43%;
+  transform: translate(-35%, -180%);
+}
+
+.texto {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  text-align: center;
+}
+
+.subtexto {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 53%;
+  transform: translate(-110%, -90%);
+}
+
+.texto-imagem {
+  position: absolute;
+  top: 50%;
+  left: 79%;
+  transform: translate(-190%, -90%);
+  height: 12%;
+  width: 22%;
+}
+
+.globalTitle {
+  display: flex;
+  position: absolute;
+  size: absolute;
+  font-size: 5.5vw;
+  color: rgba(255, 255, 255, 0.986);
+  font-weight: 500;
+  font-family: "Comfortaa";
+  padding-top: -15vh;
+  text-shadow: rgb(67, 60, 60) 7px 7px 7px;
+  justify-content: center;
+  align-items: unset;
+}
+.first {
+  position: absolute;
+  size: absolute;
+  font-size: 6vw;
+  font-weight: 500;
+  font-family: "Trispace";
+  padding-top: -15vh;
+  text-shadow: rgba(0, 0, 0, 0.917) 4px 4px 4px;
+  justify-content: center;
+  align-items: unset;
+}
+
+.button {
+  position: absolute;
+  padding-top: 1vh;
+  font-family: "Quicksand";
+  font-size: 1.8vw;
+  size: 10%;
+}
+
+.left {
+  top: 95%;
+  left: 50%;
+
+  transform: translate(-40%, -500%);
+  background-color: #733840;
+}
+
+.right {
+  top: 95%;
+  left: 56%;
+  transform: translate(-35%, -500%);
+  background-color: #ffff;
+}
+
+.center {
+  top: 90%;
+  left: 50%;
+  transform: translate(-55%, -500%);
+}
+.historia {
+  background-color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 800px) {
+  /*for cellphone*/
+
+  .globalTitle {
+    display: flex;
+    position: absolute;
+    size: absolute;
+    font: normal 15pt Comfortaa;
+    padding-bottom: 0;
+    text-shadow: rgba(0, 0, 0, 0.834) 4px 4px 4px;
+    justify-content: center;
+    align-items: unset;
+  }
+
+  .first {
+    display: flex;
+    position: absolute;
+    size: absolute;
+    font: normal 25pt Comfortaa;
+    padding-bottom: 0;
+    text-shadow: rgba(0, 0, 0, 0.834) 4px 4px 4px;
+    justify-content: center;
+    align-items: unset;
+  }
+  .carousel {
+    max-height: 50vh;
+  }
+  .capa-imagem {
+    width: 100%;
+    height: 50vh;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .texto-imagem {
+    position: absolute;
+    top: 53%;
+    left: 82%;
+    transform: translate(-145%, -90%);
+    height: 3vh;
+    width: 30vw;
+  }
+  .button {
+    bottom: 0;
+    font-size: 0.5rem;
+    height: 4vh;
+  }
+  .left {
+    font-weight: 500;
+    font-size: 3vw;
+    top: 100%;
+    transform: translate(-70%, -500%);
+  }
+  .right {
+    font-weight: 500;
+    font-size: 3vw;
+    top: 100%;
+    transform: translate(-10%, -500%);
+  }
+  .center {
+    font-weight: 500;
+    font-size: 4vw;
+    padding-top: 0.4vh;
+    top: 100%;
+    transform: translate(-50%, -500%);
+  }
+  .historia {
+    background-color: #733840;
+  }
+
+  .capa-imagem {
+    width: 300vw;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fundo-imagem {
+    width: 300vw;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+  }
+  .texto {
+    font-size: 9vw;
+    font-weight: 400;
+    font-family: "Comfortaa";
+    padding-bottom: 0;
+    text-shadow: rgba(0, 0, 0, 0.993) 4px 4px 4px;
+    justify-content: center;
+    text-align: center;
+  }
+}

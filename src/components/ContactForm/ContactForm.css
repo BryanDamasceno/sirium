@@ -1,0 +1,119 @@
+.form-control {
+  width: 40vw;
+  border: solid;
+  border-color: rgb(2, 169, 247);
+  border-width: 0.2vw;
+  padding-bottom: 2vh;
+  box-sizing: border-box;
+  padding-top: 1vh;
+  color: rgb(9, 24, 24);
+  border-radius: 4px;
+  transition: 0.5s;
+  outline: none;
+  font: Arial;
+}
+.fundo2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6vw;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/pexels-photo-821754.jpeg?alt=media&token=4c80e98c-ccf3-48f6-8f4e-70593db049ec");
+  padding-top: 3vw;
+  background-size: 100%;
+  background-position-y: 50%;
+}
+.blocoContato {
+  background: rgba(39, 118, 113, 0.4);
+  width: 47vw;
+  height: 35vw;
+  border-radius: 5px;
+  box-shadow: rgba(9, 27, 27, 0.397) 3px 3px 3px;
+}
+.blocoContato > h1 {
+  display: flex;
+  justify-content: center;
+  font: normal 25pt Comfortaa;
+  color: #fff;
+  text-shadow: rgb(67, 60, 60) 2px 2px 2px;
+}
+
+.forms {
+  display: flex;
+  justify-content: center;
+  padding-top: 4vh;
+  padding-bottom: 15vh;
+}
+.input {
+  padding-bottom: 2vh;
+}
+
+.row {
+  color: aqua;
+}
+
+.btn[type="submit"] {
+  background: rgb(29, 166, 157);
+  color: white;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.col2 {
+  padding-bottom: 0.5vh;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 425px) {
+  .form-control {
+    width: 40vw;
+    border: solid;
+    border-color: rgb(2, 169, 247);
+    border-width: 0.2vw;
+    padding-bottom: 1vh;
+    box-sizing: border-box;
+    padding-top: 0.2vh;
+    color: rgb(9, 24, 24);
+    border-radius: 4px;
+    transition: 0.5s;
+    outline: none;
+    font: Arial;
+  }
+  .fundo2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6vw;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/pexels-photo-821754.jpeg?alt=media&token=4c80e98c-ccf3-48f6-8f4e-70593db049ec");
+    padding-top: 5vw;
+    background-size: 115%;
+    background-position-y: 50%;
+  }
+  .blocoContato {
+    background: rgba(39, 118, 113, 0.4);
+    width: 75vw;
+    height: 115vw;
+    border-radius: 5px;
+    box-shadow: rgba(9, 27, 27, 0.397) 3px 3px 3px;
+  }
+  .blocoContato > h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font: normal 18pt Comfortaa;
+    color: #fff;
+    text-shadow: rgb(67, 60, 60) 2px 2px 2px;
+  }
+
+  .forms {
+    display: flex;
+    justify-content: center;
+    padding-top: 3vh;
+    padding-bottom: 15vh;
+  }
+  .input {
+    padding-bottom: 2vh;
+  }
+}
