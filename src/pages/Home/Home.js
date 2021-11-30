@@ -9,17 +9,26 @@ import { GoMarkGithub } from "react-icons/go";
 import CardReserva from "../../components/Grid/Grid";
 import CardInternet from "../../components/Card/Card";
 import Lottie from "react-lottie";
-import animationData from "../../animations/devAnimation.json";
+import animationDataDev from "../../animations/devAnimation.json";
+import animationDataSocial from "../../animations/socialAnimation.json";
 
 function Home() {
   const [animationState, setAnimationState] = useState({
     isStopped: false,
     isPaused: false,
   });
-  const defaultOptions = {
+  const defaultOptionsDev = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: animationDataDev,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const defaultOptionsSocial = {
+    loop: true,
+    autoplay: true,
+    animationData: animationDataSocial,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -30,43 +39,35 @@ function Home() {
         <Carrossel />
         <div className="animation">
           <Lottie
-            options={defaultOptions}
+            options={defaultOptionsDev}
             height={760}
             width={760}
             isStopped={animationState.isStopped}
             isPaused={animationState.isPaused}
           />
-        </div>
-        <div className="Case">
-          <div className="Box">
-            <h2 className="title2">Modernize seu negócio</h2>
-          </div>
 
-          <div className="boxTopico">
-            <div className="Topicos">
-              <p>
-                <FaAngleDoubleRight /> IP Válido
-                <FaCheckSquare className="Check" />
-              </p>
-              <p>
-                <FaAngleDoubleRight /> Garantia de Banda
-                <FaCheckSquare className="Check" />
-              </p>
-              <p>
-                <FaAngleDoubleRight /> Velocidade Contratada
-                <FaCheckSquare className="Check" />
-              </p>
-              <p>
-                <FaAngleDoubleRight /> SLA 4 horas
-                <FaCheckSquare className="Check" />
-              </p>
-            </div>
-          </div>
+          <h1 className="subtitle">
+            NOSSO OBJETIVO É LEVAR VOCÊ ATÉ SEUS CLIENTES NO MUNDO DIGITAL.
+          </h1>
+        </div>
+
+        <div className="animation2">
+          <Lottie
+            options={defaultOptionsSocial}
+            height={560}
+            width={560}
+            isStopped={animationState.isStopped}
+            isPaused={animationState.isPaused}
+          />
+
+          <h1 className="subtitle2">
+            COLOQUE SUA IDEIA E SEU NEGÓCIO NA INTERNET.
+          </h1>
         </div>
 
         <div className="apresentacao">
           <h1 className="title1">
-            Por que somos o melhor <br /> provedor da região?
+            TENHA SEU SITE PERSONALIZADO <br /> PARA SEUS OBJETIVOS
           </h1>
         </div>
       </div>
