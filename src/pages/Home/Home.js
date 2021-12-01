@@ -74,24 +74,18 @@ function Home() {
 
       <div className="Grade">
         <CardReserva
-          titulo="Suporte técnico diferenciado,
-              com profissionais qualificados
-              para um melhor atendimento."
-          image="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/prof.jpg?alt=media&token=88f3374b-edef-42b7-9f61-2c33fb7aa7a9"
+          titulo="Vamos fazer um site que combina com você e com sua empresa"
+          image="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/1card.png?alt=media&token=d76f4e69-fe77-4fc1-8aa7-baed6117c046"
         />
 
         <CardReserva
-          titulo="Oferecemos uma conexão segura
-            e com qualidade 24h por dia.
-            Temos redundância com links diretamente do PTT de SP, RJ e MG."
-          image="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/casal.jpg?alt=media&token=022cf031-6728-4100-8588-2b34c41cf459"
+          titulo="Garantimos a melhor experiência de usuário ao conhecer seus serviços e produtos"
+          image="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/2card.png?alt=media&token=e5f198d8-4ac1-43ed-ac4a-52122fe59006"
         />
 
         <CardReserva
-          titulo="Planos alternativos com
-            valores que cabem no seu bolso,
-            taxa de instalação dividida no cartão ou boleto, sem burocracia."
-          image="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/money2.jpg?alt=media&token=5bd94650-86d0-4de0-b2f5-dd3b07a3d2a8"
+          titulo="Buscamos tornar o mercado virtual acessível, vamos encontrar o melhor preço pra você"
+          image="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/3.png?alt=media&token=7ee86718-1361-4acd-b014-ef4e3f50852e"
         />
       </div>
 

@@ -13,10 +13,11 @@ const useStyles = makeStyles({
     maxWidth: 345,
     boxShadow: "rgba(0, 0, 0, 0.234) 3px 3px 3px 3px",
     color: "white",
-    textAlign: "initial",
+    textAlign: "center",
     backgroundColor: "#51649d",
     fontFamily: "Roboto",
-    borderRadius: 4,
+    borderRadius: 25,
+    fontWeight: 600,
     transition: "0.2s",
     opacity: "97%",
     textDecoration: "none",
@@ -34,14 +35,12 @@ export default function CardInternet(props) {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Quarto reservado"
+          alt="Faça seu site"
           height="140"
           image={props.image}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.titulo}
-          </Typography>
+          <Typography>{props.titulo}</Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {props.data}
           </Typography>

@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
+
 import CardMedia from "@material-ui/core/CardMedia";
 
 export default function CardReserva(props) {
@@ -16,15 +16,12 @@ export default function CardReserva(props) {
       <CardActionArea>
         <CardMedia
           component="img"
-          alt="Quarto reservado"
-          height="140"
+          alt="Faça seu site"
+          height="190"
+          width="190"
           image={props.image}
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            {props.titulo}
-          </Typography>
-        </CardContent>
+        <CardContent className={classes.title}>{props.titulo}</CardContent>
       </CardActionArea>
     </Card>
   );
@@ -32,17 +29,29 @@ export default function CardReserva(props) {
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
-    boxShadow: "rgba(0, 0, 0, 0.234) 3px 3px 3px 3px",
+    maxWidth: 370,
+    height: 340,
+    boxShadow: "rgba(0, 0, 0, 0.115) 2px 2px 2px 2px",
     color: "white",
-    textAlign: "initial",
-    backgroundColor: "#2c2c2c",
+    textAlign: "center",
+    alignItems: "center",
+    fontWeight: 700,
+    fontSize: 500,
+    backgroundColor: "#949bd1",
     fontFamily: "Roboto",
-    borderRadius: 4,
-    transition: "0.2s",
+    borderRadius: 58,
+    transition: "0.3s",
 
     "&:hover": {
-      transform: "scale(1.01)",
+      transform: "scale(1.09)",
     },
+  },
+
+  title: {
+    fontSize: "1.5rem",
+    fontFamily: "Roboto",
+    fontWeight: 700,
+    lineHeight: 1.334,
+    letterSpacing: 0,
   },
 });
