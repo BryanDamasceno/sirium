@@ -37,6 +37,26 @@
   margin-bottom: 22vh;
 }
 
+.animation3 {
+  display: flex;
+  flex-direction: row-reverse;
+  pointer-events: none;
+  height: 70vh;
+  width: 160vw;
+  align-items: center;
+  margin-bottom: 22vh;
+}
+
+.animation4 {
+  display: flex;
+  flex-direction: row;
+  pointer-events: none;
+  height: 70vh;
+  width: 160vw;
+  align-items: center;
+  margin-bottom: 22vh;
+}
+
 .subtitle2 {
   width: 40vw;
   font: normal 45pt "Unica One", cursive;
@@ -70,6 +90,16 @@
 .title1 > h1 {
   margin: 0;
   padding: 0;
+}
+
+.title5 {
+  font: normal 39pt "Unica One", cursive;
+  color: #07364a;
+  margin: 15px;
+  text-shadow: rgba(0, 0, 0, 0.05) 4px 4px 4px;
+  text-align: center;
+  align-items: center;
+  font-weight: 600;
 }
 
 .title2 {
@@ -149,9 +179,8 @@
   grid-template-columns: 345px 345px 345px;
   grid-gap: 5vw;
   display: inline-grid;
-
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-top: 12rem;
+  margin-bottom: 10rem;
   display: flex;
   justify-content: center;
 }
@@ -189,6 +218,28 @@
   color: rgb(255, 255, 255);
   margin: 20px;
   text-shadow: rgba(0, 0, 0, 0.621) 4px 4px 4px;
+}
+@media screen and (min-width: 1900px) {
+  .title5 {
+    font: normal 52pt "Unica One", cursive;
+    color: #07364a;
+    margin: 20px;
+    text-shadow: rgba(0, 0, 0, 0.05) 4px 4px 4px;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+  }
+
+  .Grade {
+    grid-template-columns: 345px 345px 345px;
+    grid-gap: 5vw;
+    display: inline-grid;
+
+    margin-top: 12rem;
+    margin-bottom: 17rem;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {

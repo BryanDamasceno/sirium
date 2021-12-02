@@ -1,5 +1,5 @@
 /*eslint-disable*/
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../../global.css";
 import Carrossel from "../../components/Carrossel/Carrossel";
 import "./Home.css";
@@ -11,8 +11,17 @@ import CardInternet from "../../components/Card/Card";
 import Lottie from "react-lottie";
 import animationDataDev from "../../animations/devAnimation.json";
 import animationDataSocial from "../../animations/socialAnimation.json";
+import animationDataTech from "../../animations/techAnimation.json";
+import animationDataAnalise from "../../animations/analiseAnimation.json";
 
 function Home() {
+  const [size, setSize] = useState(560);
+
+  useEffect(() => {
+    if (window.screen.width < 1500) setSize(620);
+    if (window.screen.width > 1500) setSize(760);
+  });
+
   const [animationState, setAnimationState] = useState({
     isStopped: false,
     isPaused: false,
@@ -33,6 +42,25 @@ function Home() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
+  const defaultOptionsTech = {
+    loop: true,
+    autoplay: true,
+    animationData: animationDataTech,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
+  const defaultOptionsAnalise = {
+    loop: true,
+    autoplay: true,
+    animationData: animationDataAnalise,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <div className="container">
       <div>
@@ -74,19 +102,46 @@ function Home() {
 
       <div className="Grade">
         <CardReserva
-          titulo="Vamos fazer um site que combina com você e com sua empresa"
+          titulo="TENHA UM SITE QUE COMBINE COM A SUA EMPRESA"
           image="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/1card.png?alt=media&token=d76f4e69-fe77-4fc1-8aa7-baed6117c046"
         />
 
         <CardReserva
-          titulo="Garantimos a melhor experiência de usuário ao conhecer seus serviços e produtos"
+          titulo="GARANTIMOS A MELHOR EXPERIÊNCIA DE USUÁRIO AO CONHECER SEUS SERVIÇOS E PRODUTOS"
           image="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/2card.png?alt=media&token=e5f198d8-4ac1-43ed-ac4a-52122fe59006"
         />
 
         <CardReserva
-          titulo="Buscamos tornar o mercado virtual acessível, vamos encontrar o melhor preço pra você"
+          titulo="QUEREMOS TORNAR O MERCADO DIGITAL ACESSÍVEL, JUNTOS PODEMOS ENCONTRAR O MELHOR PREÇO PRA VOCÊ "
           image="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/3.png?alt=media&token=7ee86718-1361-4acd-b014-ef4e3f50852e"
         />
+      </div>
+
+      <h1 className="title5">USAMOS AS TECNOLOGIAS MAIS MODERNAS DO MERCADO</h1>
+
+      <div className="animation3">
+        <Lottie
+          options={defaultOptionsTech}
+          height={size}
+          width={size}
+          isStopped={animationState.isStopped}
+          isPaused={animationState.isPaused}
+        />
+      </div>
+
+      <div className="animation4">
+        <Lottie
+          options={defaultOptionsAnalise}
+          height={size}
+          width={size}
+          isStopped={animationState.isStopped}
+          isPaused={animationState.isPaused}
+        />
+
+        <h1 className="subtitle">
+          NOS CONTE SUA HISTÓRIA E VAMOS ENCONTRAR A MELHOR SOLUÇÃO PARA SEU
+          PROBLEMA
+        </h1>
       </div>
 
       <div className="stream">

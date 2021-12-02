@@ -48,7 +48,7 @@ const useStyles = makeStyles({
   },
 
   title: {
-    fontSize: "1.5rem",
+    fontSize: "1.3rem",
     fontFamily: "Roboto",
     fontWeight: 700,
     lineHeight: 1.334,
