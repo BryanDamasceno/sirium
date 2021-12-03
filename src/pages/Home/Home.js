@@ -16,10 +16,19 @@ import animationDataAnalise from "../../animations/analiseAnimation.json";
 
 function Home() {
   const [size, setSize] = useState(560);
+  const [size3, setSize3] = useState(560);
+  const [size4, setSize4] = useState(560);
 
   useEffect(() => {
-    if (window.screen.width < 1500) setSize(620);
-    if (window.screen.width > 1500) setSize(760);
+    if (window.screen.width < 1500) {
+      setSize(620);
+      setSize3(620);
+      setSize4(510);
+    }
+    if (window.screen.width > 1500) {
+      setSize(760);
+      setSize4(760);
+    }
   });
 
   const [animationState, setAnimationState] = useState({
@@ -132,8 +141,8 @@ function Home() {
       <div className="animation4">
         <Lottie
           options={defaultOptionsAnalise}
-          height={size}
-          width={size}
+          height={size4}
+          width={size4}
           isStopped={animationState.isStopped}
           isPaused={animationState.isPaused}
         />

@@ -70,7 +70,7 @@
   font-weight: 500;
   font-family: "Unica One", cursive;
   padding-top: -15vh;
-  text-shadow: rgb(15, 13, 13) 9px 9px 9px;
+  text-shadow: rgb(0, 0, 0) 4px 4px 4px;
   justify-content: center;
   align-items: unset;
 }
@@ -81,7 +81,7 @@
   font-weight: 500;
   font-family: "Trispace";
   padding-top: -15vh;
-  text-shadow: rgba(0, 0, 0, 0.917) 4px 4px 4px;
+  text-shadow: rgba(0, 0, 0, 0.8) 4px 4px 4px;
   justify-content: center;
   align-items: unset;
 }
