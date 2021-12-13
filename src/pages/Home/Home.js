@@ -5,7 +5,7 @@ import Carrossel from "../../components/Carrossel/Carrossel";
 import "./Home.css";
 import { FaAngleDoubleRight } from "react-icons/fa";
 import { FaCheckSquare } from "react-icons/fa";
-import { GoMarkGithub } from "react-icons/go";
+
 import CardReserva from "../../components/Grid/Grid";
 import CardInternet from "../../components/Card/Card";
 import Lottie from "react-lottie";
@@ -160,41 +160,6 @@ function Home() {
           PROBLEMA
         </h1>
       </div>
-
-      <h1
-        className="title1"
-        style={{
-          fontSize: "1.2rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "black",
-        }}
-      >
-        &copy;SIRIUM
-      </h1>
-      <a
-        style={{
-          textDecoration: "none",
-        }}
-        href="https://github.com/BryanDamasceno"
-      >
-        <p
-          className="title1"
-          style={{
-            fontSize: "1.17rem",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "black",
-            paddingLeft: "1rem",
-          }}
-        >
-          Made by{" "}
-          <GoMarkGithub style={{ marginRight: "2px", marginLeft: "8px" }} />
-          BryanDamasceno
-        </p>
-      </a>
     </div>
   );
 }

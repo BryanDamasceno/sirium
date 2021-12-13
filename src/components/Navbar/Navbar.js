@@ -22,6 +22,10 @@ function Navbar() {
     showButton();
   }, []);
 
+  function scroll() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
+
   window.addEventListener("resize", showButton);
 
   return (
@@ -35,19 +39,13 @@ function Navbar() {
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li>
-              <Link
-                to="/contato"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                CONTATO
-              </Link>
-            </li>
-          </ul>
+          <ul className={click ? "nav-menu active" : "nav-menu"}></ul>
 
-          {button && <Button buttonStyle="btn--outline">CONTATO</Button>}
+          {button && (
+            <Button buttonStyle="btn--outline" onClick={scroll}>
+              CONTATO
+            </Button>
+          )}
         </div>
       </nav>
     </>

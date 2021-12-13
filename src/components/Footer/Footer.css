@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   max-height: 20%;
   background: linear-gradient(90deg, #001720 0%, #12485f 100%);
+  flex-direction: column;
 }
 .Logo-footer {
   float: left;

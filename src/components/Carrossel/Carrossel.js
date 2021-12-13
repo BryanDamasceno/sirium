@@ -51,7 +51,7 @@ function Carrossel() {
         <img
           alt="imagem"
           className="capa-imagem"
-          src="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/pexels-fauxels-3184338.jpg?alt=media&token=8a419771-da91-4c34-9b35-7e3405241464"
+          src="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/pexels-burak-kebapci-186461.jpg?alt=media&token=4c9b9d6a-d07e-4433-80b2-3bb5d9c07ec5"
         />
         <h1 className="texto globalTitle">ENTRE NO MERCADO DIGITAL.</h1>
       </div>
