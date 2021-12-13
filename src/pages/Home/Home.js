@@ -16,6 +16,7 @@ import animationDataAnalise from "../../animations/analiseAnimation.json";
 
 function Home() {
   const [size, setSize] = useState(560);
+  const [size2, setSize2] = useState(560);
   const [size3, setSize3] = useState(560);
   const [size4, setSize4] = useState(560);
 
@@ -25,8 +26,15 @@ function Home() {
       setSize3(620);
       setSize4(510);
     }
+    if (window.screen.width < 500) {
+      setSize(550);
+      setSize2(430);
+      setSize3(420);
+      setSize4(610);
+    }
     if (window.screen.width > 1500) {
       setSize(760);
+      setSize3(760);
       setSize4(760);
     }
   });
@@ -77,8 +85,8 @@ function Home() {
         <div className="animation">
           <Lottie
             options={defaultOptionsDev}
-            height={760}
-            width={760}
+            height={size}
+            width={size}
             isStopped={animationState.isStopped}
             isPaused={animationState.isPaused}
           />
@@ -91,8 +99,8 @@ function Home() {
         <div className="animation2">
           <Lottie
             options={defaultOptionsSocial}
-            height={560}
-            width={560}
+            height={size2}
+            width={size2}
             isStopped={animationState.isStopped}
             isPaused={animationState.isPaused}
           />
@@ -131,8 +139,8 @@ function Home() {
       <div className="animation3">
         <Lottie
           options={defaultOptionsTech}
-          height={size}
-          width={size}
+          height={size3}
+          width={size3}
           isStopped={animationState.isStopped}
           isPaused={animationState.isPaused}
         />
@@ -147,68 +155,12 @@ function Home() {
           isPaused={animationState.isPaused}
         />
 
-        <h1 className="subtitle">
+        <h1 className="subtitle4">
           NOS CONTE SUA HISTÓRIA E VAMOS ENCONTRAR A MELHOR SOLUÇÃO PARA SEU
           PROBLEMA
         </h1>
       </div>
 
-      <div className="stream">
-        <div className="apresentacao">
-          <h3 className="title3">Assista tudo, com qualidade e velocidade.</h3>
-        </div>
-      </div>
-      <img
-        alt="imagem"
-        className="netflix"
-        src="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/sream.jpg?alt=media&token=31da8cac-ff26-48d2-a066-24f6ceb6c7e8"
-      />
-      <div className="jogos">
-        <div className="apresentacao">
-          <h3 className="title3">Não perca um frame dos seus jogos.</h3>
-        </div>
-      </div>
-      <img
-        alt="imagem"
-        className="netflix"
-        src="https://firebasestorage.googleapis.com/v0/b/planex-telecom.appspot.com/o/game.jpg?alt=media&token=ddd3ab2c-4d45-405d-b35c-b9c168d23a9f"
-      />
-      <div className="apresentacao">
-        <h4 className="title4">Nossos Planos</h4>
-      </div>
-      <div className="Grade2">
-        <a href="https://api.whatsapp.com/send/?phone=553141124080&text&app_absent=0">
-          <CardInternet
-            titulo="Contrate agora 100 mega de download, sem limite de uso. "
-            data="*Planos sujeito a viabilidade técnica."
-            image="/images/icons/100Mega.png"
-          />
-        </a>
-
-        <a href="https://api.whatsapp.com/send/?phone=553141124080&text&app_absent=0">
-          <CardInternet
-            titulo="Contrate agora 200 mega de download, sem limite de uso."
-            data="*Planos sujeito a viabilidade técnica."
-            image="/images/icons/200Mega.png"
-          />
-        </a>
-
-        <a href="https://api.whatsapp.com/send/?phone=553141124080&text&app_absent=0">
-          <CardInternet
-            titulo="Contrate agora 300 mega, sem limite de uso."
-            data="*Planos sujeito a viabilidade técnica."
-            image="/images/icons/300Mega.png"
-          />
-        </a>
-
-        <a href="https://api.whatsapp.com/send/?phone=553141124080&text&app_absent=0">
-          <CardInternet
-            titulo="Contrate agora 500 mega, sem limite de uso."
-            data="*Planos sujeito a viabilidade técnica."
-            image="/images/icons/500Mega.png"
-          />
-        </a>
-      </div>
       <h1
         className="title1"
         style={{
@@ -219,7 +171,7 @@ function Home() {
           color: "black",
         }}
       >
-        &copy;PlanexTelecom
+        &copy;SIRIUM
       </h1>
       <a
         style={{

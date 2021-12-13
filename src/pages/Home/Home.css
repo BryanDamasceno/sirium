@@ -28,6 +28,15 @@
   margin: 20px;
   text-shadow: rgba(0, 0, 0, 0.068) 4px 4px 4px;
 }
+
+.subtitle4 {
+  width: 40vw;
+  font: normal 45pt "Unica One", cursive;
+  color: #041e29;
+  font-weight: 600;
+  margin: 20px;
+  text-shadow: rgba(0, 0, 0, 0.068) 4px 4px 4px;
+}
 .animation2 {
   display: flex;
   flex-direction: row-reverse;
@@ -243,10 +252,80 @@
 }
 
 @media screen and (max-width: 500px) {
+  .animation {
+    display: flex;
+    flex-direction: column-reverse;
+    pointer-events: none;
+
+    align-items: center;
+    margin-bottom: 3vh;
+  }
+
+  .subtitle {
+    font: normal 27pt "Unica One", cursive;
+    color: #041e29;
+    font-weight: 600;
+    margin-left: 5.5rem;
+    margin-top: 13rem;
+    width: 68vw;
+
+    text-shadow: rgba(0, 0, 0, 0.068) 4px 4px 4px;
+  }
+  .subtitle4 {
+    font: normal 27pt "Unica One", cursive;
+    color: #041e29;
+    font-weight: 600;
+    margin-left: 5.5rem;
+    margin-top: 4rem;
+    width: 68vw;
+
+    text-shadow: rgba(0, 0, 0, 0.068) 4px 4px 4px;
+  }
+  .animation2 {
+    display: flex;
+    flex-direction: column-reverse;
+    pointer-events: none;
+    width: 95vw;
+    align-items: center;
+    margin-bottom: 22vh;
+  }
+
+  .animation3 {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    height: 70vh;
+    width: 160vw;
+    align-items: center;
+    margin-bottom: 0vh;
+  }
+
+  .animation4 {
+    display: flex;
+    flex-direction: column-reverse;
+    pointer-events: none;
+    height: 120vh;
+    width: 90vw;
+    align-items: center;
+    margin-bottom: 22vh;
+  }
+
+  .subtitle2 {
+    font: normal 27pt "Unica One", cursive;
+    color: #041e29;
+    font-weight: 600;
+    margin-left: 5.5rem;
+    margin-top: 5rem;
+    width: 68vw;
+
+    text-shadow: rgba(0, 0, 0, 0.068) 4px 4px 4px;
+  }
+
   .Grade {
     padding-left: 0vw;
-    padding-top: 8vh;
-    grid-template-columns: 275px;
+    padding-top: 4vh;
+
+    grid-template-columns: 295px;
     display: grid;
   }
   .Grade2 {
@@ -274,6 +353,16 @@
     color: rgb(255, 255, 255);
     margin: 20px;
     text-shadow: rgba(0, 0, 0, 0.621) 4px 4px 4px;
+  }
+
+  .title5 {
+    font: normal 32pt "Unica One", cursive;
+    color: #07364a;
+    margin: 15px;
+    text-shadow: rgba(0, 0, 0, 0.05) 4px 4px 4px;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
   }
   .apresentacao {
     margin: 0;
@@ -333,10 +422,32 @@
     display: flex;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
+  .animation4 {
+    display: flex;
+    flex-direction: column-reverse;
+    pointer-events: none;
+    height: 90vh;
+    width: 90vw;
+    align-items: center;
+    margin-bottom: 22vh;
+  }
+  .subtitle4 {
+    margin-top: 4rem;
+  }
+  .animation3 {
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    height: 55vh;
+    width: 160vw;
+    align-items: center;
+    margin-bottom: 0vh;
+  }
   .Grade {
     display: grid;
-    padding-top: 8vh;
+    padding-top: 0vh;
+    margin-top: 18vh;
     grid-template-columns: 275px;
   }
   .Grade2 {
@@ -423,12 +534,25 @@
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 365px) {
+  .animation4 {
+    display: flex;
+    flex-direction: column-reverse;
+    pointer-events: none;
+    height: 117vh;
+    width: 90vw;
+    align-items: center;
+    margin-bottom: 22vh;
+  }
+  .subtitle4 {
+    margin-top: 4rem;
+  }
   .Grade {
     padding-left: 0vw;
     padding-top: 8vh;
     grid-template-columns: 275px;
     display: grid;
+    margin-top: 5vh;
   }
   .Grade2 {
     padding-left: 0vw;

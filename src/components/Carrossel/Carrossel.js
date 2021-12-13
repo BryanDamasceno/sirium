@@ -1,5 +1,5 @@
 import React from "react";
-import { fade, IconButton } from "@material-ui/core";
+import { IconButton } from "@material-ui/core";
 import Carousel from "nuka-carousel";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { IconContext } from "react-icons";
@@ -11,8 +11,10 @@ function Carrossel() {
       className="carousel"
       autoplay={true}
       wrapAround={true}
-      transactionMode={fade}
+      scrollMode="remainder"
+      transitionMode="fade"
       slidesToScroll="auto"
+      speed={1500}
       disableEdgeSwiping="fatruelse"
       cellAlign="center"
       renderCenterLeftControls={({ previousSlide }) => (
@@ -51,9 +53,7 @@ function Carrossel() {
           className="capa-imagem"
           src="https://firebasestorage.googleapis.com/v0/b/sirium-55003.appspot.com/o/pexels-fauxels-3184338.jpg?alt=media&token=8a419771-da91-4c34-9b35-7e3405241464"
         />
-        <h1 className="texto globalTitle">
-          MARQUE SUA PRESENÇA NO MERCADO DIGITAL.
-        </h1>
+        <h1 className="texto globalTitle">ENTRE NO MERCADO DIGITAL.</h1>
       </div>
 
       <div className="content">

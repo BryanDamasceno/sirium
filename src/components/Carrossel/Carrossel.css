@@ -190,7 +190,7 @@
 
   .capa-imagem {
     width: 300vw;
-    height: 50vh;
+    height: 65vh;
     background-position: center;
     background-size: cover;
   }
@@ -202,11 +202,11 @@
     background-size: cover;
   }
   .texto {
-    font-size: 9vw;
+    font-size: 12vw;
     font-weight: 400;
     font-family: "Unica One", cursive;
     padding-bottom: 0;
-    text-shadow: rgba(0, 0, 0, 0.993) 4px 4px 4px;
+    text-shadow: rgba(0, 0, 0, 0.897) 2px 2px 2px;
     justify-content: center;
     text-align: center;
   }
