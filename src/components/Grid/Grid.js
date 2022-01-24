@@ -30,16 +30,17 @@ export default function CardReserva(props) {
 const useStyles = makeStyles({
   root: {
     maxWidth: 370,
-    height: 340,
+    height: 375,
     boxShadow: "rgba(0, 0, 0, 0.115) 2px 2px 2px 2px",
     color: "white",
     textAlign: "center",
     alignItems: "center",
     fontWeight: 700,
     fontSize: 500,
+    marginTop: "1rem",
     backgroundColor: "#949bd1",
     fontFamily: "Roboto",
-    borderRadius: 58,
+    borderRadius: 62,
     transition: "0.3s",
 
     "&:hover": {
